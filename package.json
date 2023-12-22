@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "git@github.com:koko57/monorepo.git",
+  "author": "koko57",
+  "license": "MIT"
+}
