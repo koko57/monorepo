@@ -1,19 +1,17 @@
-
 import React from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-import {add} from '@example-app/shared';
+import {add, CustomButton} from '@example-app/shared';
 
 
 const App = () => {
   return (
-      <View>
-        <TouchableOpacity
-            accessibilityRole="button"
+      <View style={{flex: 1, padding: 40}}>
+        <CustomButton
             onPress={() => {
               console.log(add(1, 2));
-            }}>
-          <Text>Run Add function</Text>
-        </TouchableOpacity>
+            }}
+            buttonText={'CustomButton'}
+        />
       </View>
   );
 };
